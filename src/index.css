@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -18,25 +19,34 @@ nav {
     max-width: 100px;
 }
 
-.grid-pic-class {
+section {
+    padding: 20px;
+}
+
+.hero {
     display: flex;
-
-}
-.pic--hero {
-    width: 70%;
-    height: 232px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
 }
 
-.main-h1{
-    font-family: 'Poppins';
+.hero--pic {
+    max-width: 400px;
+    align-self: center;
+}
+
+.hero--h1 {
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 110%;
     color: #000000;
-    width: 347px;
-    height: 40px;
+    margin-bottom: 16px;
+}
+
+.hero--p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 110%;
+    color: #222222;
+    margin-top: 0;
 }

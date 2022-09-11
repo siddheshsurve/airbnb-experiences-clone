@@ -5,10 +5,12 @@ import HeroPic from "../images/grid-pic.png"
 export default function Hero () {
     return (
         <>
-            <div className="grid-pic-class">
-                <img className="pic--hero" src={HeroPic} />
-            </div>
-            <h1 className="main-h1">Online Experiences</h1>
+            <section className="hero">
+                <img src={HeroPic} className="hero--pic" />
+                <h1 className="hero--h1">Online Experiences</h1>
+                <p className="hero--p">Join unique interactive activities led by 
+            one-of-a-kind hosts—all without leaving home.</p>
+            </section>
         </>
     )
 }
