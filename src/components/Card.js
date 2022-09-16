@@ -1,21 +1,23 @@
 import React from "react";
 import "../index.css"
-import Katie from "../images/katie-zaferes.png"
 import Star from "../images/star.png"
 
-export default function Card () {
+export default function Card (props) {
+    // let a = "."+props.img
+    // console.log(a);
     return (
         <>
            <div className="card">
-                <img src={Katie} className="card--pic"/>
+            {/* pro move */}
+                <img src = {"."+props.img} className="card--pic"/>
                 <div className="card--stats">
                     <img src={Star} className="card--star"/>
-                    <spans>5.0</spans>
-                    <spans className="gray">(6) • </spans>
-                    <spans className="gray">USA</spans>
+                    <span>{props.rating}</span>
+                    <spans className="gray">({props.reviewCount}) • </spans>
+                    <spans className="gray">{props.country}</spans>
                 </div>
-                <p>Life Lessons with Katie zaferes</p>
-                <p><span className="bold">From $136</span> / person</p>
+                <p>{props.title}</p>
+                <p><span className="bold">From ${props.price}</span> / person</p>
            </div>
         </>
     )
