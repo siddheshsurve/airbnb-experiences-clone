@@ -3,6 +3,7 @@ import NavMain from "./components/NavMain";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
 import KatieP from "./images/katie-zaferes.png"
+import Data from "./data.js"
 export default function App () {
   return (
     <>
