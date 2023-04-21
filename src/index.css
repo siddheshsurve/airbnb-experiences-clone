@@ -18,3 +18,10 @@ section {
   padding: 20px;
 }
 
+.gray {
+  color: #918E9B;
+}
+
+.bold {
+  font-weight: bold;
+}
