@@ -11,6 +11,8 @@
     flex: 0 0 auto;         
     display: flex;          
     flex-direction: column;
+    /* for sold out badge */
+    position: relative;    
 }
 
 .card--image {
@@ -35,5 +37,16 @@
 
 .card--price {
     margin-top: auto;
+}
+
+.cards--badge {
+    /* fixed on image */
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    font-weight: bold;
+    border-radius: 2px;
 }
 
