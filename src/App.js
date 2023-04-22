@@ -5,26 +5,25 @@ import Card from "./components/Card/Card";
 import data from "./data";
 
 function App() {
-
-  const cards = data.map(item => {
+  const cards = data.map((item) => {
     return (
       <Card
-        img={item.coverImg}
+        coverImg={item.coverImg}
         rating={item.stats.rating}
         reviewCount={item.stats.reviewCount}
         location={item.location}
         title={item.title}
         price={item.price}
       />
-    )
-  })
+    );
+  });
 
   return (
     <div className="App">
       <Navbar />
       {cards}
     </div>
-  )
+  );
 }
 
 export default App;
