@@ -18,8 +18,8 @@ function Card(props) {
 
       <div className="card--stats">
         <img src="./assets/star.png" className="card--star" alt="star pic" />
-        <span>{props.rating}</span>
-        <span className="gray">({props.reviewCount}) • </span>
+        <span>{props.stats.rating}</span>
+        <span className="gray">({props.stats.reviewCount}) • </span>
         <span className="gray">{props.location}</span>
       </div>
 
