@@ -8,6 +8,7 @@ function App() {
   const cards = data.map((item) => {
     return (
       <Card
+        key = {item.id}
         coverImg={item.coverImg}
         rating={item.stats.rating}
         reviewCount={item.stats.reviewCount}
@@ -21,7 +22,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {cards}
+      <section className="card-list">
+        {cards}
+      </section>
     </div>
   );
 }
